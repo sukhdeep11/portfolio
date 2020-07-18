@@ -1,3 +1,21 @@
-<div class="header">
-    <p class="test">Hello my name is sukhdeep Singh Singh</p>
-</div>
+<nav>
+    <ul>
+        <li>
+            <div class="burgerMenu">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+        </li>
+        <li>
+            <img src="../../../assets/sukh-logo.svg" class="logo" alt="">
+        </li>
+        <li>
+            <div class="themeToggler" (click)="toggleTheme()">
+                <img src="../../../assets/moon.svg" alt="">
+                <img src="../../../assets/sun.svg" alt="">
+                <div class="ball" [ngClass]="{'ballRight':themeDark}"></div>
+            </div>
+        </li>
+    </ul>
+</nav>

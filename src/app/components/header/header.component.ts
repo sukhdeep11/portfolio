@@ -8,6 +8,11 @@ import { ThemeService } from "src/app/shared/theme/theme.service";
 })
 export class HeaderComponent implements OnInit {
 
+  themeDark = false;
+
+  toggleTheme() {
+    this.themeDark = !this.themeDark;
+  }
 
   constructor(
     private themeService: ThemeService

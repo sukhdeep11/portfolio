@@ -1,8 +1,77 @@
-p{
-    font-size: 1.6rem;
+nav{
+    background-color: #0B4B79;
+    height: 60px;
+    padding: 0 1rem;
 }
 
-.test{
-    background-color: var(--background-tertiary);
-    color: var(--foreground-quaternary);
+nav ul,nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+
+.burgerMenu{
+    cursor: pointer;
+}
+
+.burgerMenu .bar{
+    width: 4rem;
+    height: 0.5rem;
+    background-color: white;
+    margin: 0.5rem;
+    border-radius: 2px;
+}
+.burgerMenu .bar2{
+    width: 3.5rem;
+}
+.burgerMenu .bar3{
+    width: 4rem;
+}
+
+.themeToggler{
+    width: 4.5rem;
+    height: 2.4rem;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2rem;
+    padding: 0 3px;
+    position: relative;
+    cursor: pointer;
+    background-color: #111111;
+}
+
+.themeToggler img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.themeToggler .ball{
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: white;
+    margin: 1px 2px;
+    transition: 0.5s;
+}
+
+.themeToggler .ballRight{
+    left: 50%;
+}
+
+
+nav img.logo{
+    width: 8rem;
 }
