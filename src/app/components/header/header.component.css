@@ -1,0 +1,8 @@
+p{
+    font-size: 1.6rem;
+}
+
+.test{
+    background-color: var(--background-tertiary);
+    color: var(--foreground-quaternary);
+}
