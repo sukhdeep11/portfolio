@@ -1,3 +1,8 @@
+header{
+    position: relative;
+}
+
+
 nav{
     background-color: #0B4B79;
     height: 60px;
@@ -75,3 +80,83 @@ nav ul{
 nav img.logo{
     width: 8rem;
 }
+
+
+
+/*  */
+/* Sidenav */
+/*  */
+
+.sidenav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #3D6F93;
+    z-index: 999;
+    border-radius: 0% 50% 350% 0%;
+    overflow: hidden;
+    transition: 0.5s;
+        
+}
+
+.asideSmall{
+    width: 0;
+}
+.asideMedium{
+    width: 8rem;
+}
+.asideLarge{
+    width: 100%;
+    border-radius: 0;
+}
+
+.sideDiv{
+    display: grid;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+aside .icon{
+    margin-top: 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+ .icon img{
+     width: 3rem;
+     margin: 1rem;
+ }
+
+ .icon .text{
+     font-size: 2rem;
+     color: white;
+     font-family: Roboto;
+     margin-left: 1.8rem;
+ }
+
+ aside .close{
+     color: white;
+     font-size: 3rem;
+     position: absolute;
+     top: 1rem;
+     right: 1rem;
+     font-family: Roboto;
+     cursor: pointer;
+     display: none;
+ }
+
+ .hideBurgerMenu{
+     display: none;
+ }
+
+
+ aside .showClose{
+     display: block;
+ }
+
+
+
+
+
+ /* Media Qurries */

@@ -9,6 +9,22 @@ import { ThemeService } from "src/app/shared/theme/theme.service";
 export class HeaderComponent implements OnInit {
 
   themeDark = false;
+  side = 0;
+
+  toggleSide() {
+    if (this.side == 0) {
+      this.side = this.side + 1;
+      return;
+    }
+    if (this.side == 1) {
+      this.side = this.side + 1;
+      return;
+    }
+    if (this.side == 2) {
+      this.side = 0;
+      return;
+    }
+  }
 
   toggleTheme() {
     this.themeDark = !this.themeDark;

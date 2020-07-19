@@ -1,21 +1,44 @@
-<nav>
-    <ul>
-        <li>
-            <div class="burgerMenu">
+<header>
+
+    <nav>
+        <ul>
+            <li>
+                <div class="burgerMenu" (click)="toggleSide()">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </div>
+            </li>
+            <li>
+                <img src="../../../assets/sukh-logo.svg" class="logo" alt="">
+            </li>
+            <li>
+                <div class="themeToggler" (click)="toggleTheme()">
+                    <img src="../../../assets/moon.svg" alt="">
+                    <img src="../../../assets/sun.svg" alt="">
+                    <div class="ball" [ngClass]="{'ballRight':themeDark}"></div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <aside class="sidenav" [ngClass]="{'asideSmall':side==0,'asideMedium':side==1,'asideLarge':side==2}">
+        <div class="sideDiv">
+            <div class="burgerMenu" (click)="toggleSide()" [ngClass]="{'hideBurgerMenu':side==2}">
                 <div class="bar bar1"></div>
                 <div class="bar bar2"></div>
                 <div class="bar bar3"></div>
             </div>
-        </li>
-        <li>
-            <img src="../../../assets/sukh-logo.svg" class="logo" alt="">
-        </li>
-        <li>
-            <div class="themeToggler" (click)="toggleTheme()">
-                <img src="../../../assets/moon.svg" alt="">
-                <img src="../../../assets/sun.svg" alt="">
-                <div class="ball" [ngClass]="{'ballRight':themeDark}"></div>
+            <div class="icon">
+                <img src="../../../assets/user.svg" alt="">
+                <span class="text">About</span>
             </div>
-        </li>
-    </ul>
-</nav>
+            <div class="icon">
+                <img src="../../../assets/phone.svg" alt="">
+                <span class="text">Contact</span>
+            </div>
+        </div>
+
+        <div class="close" (click)="toggleSide()" [ngClass]="{'showClose':side==2}">X</div>
+    </aside>
+</header>
