@@ -57,3 +57,59 @@
         content: "Hello,";
     }
 }
+
+
+
+
+/* Cards */
+
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: #0B4B79;
+    margin-top: 3rem;
+}
+
+.cardContainer .card{
+    width: 60%;
+    text-align: center;
+    background-color: white;
+    margin: 1.5rem auto;
+    padding: 5rem 4rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 1px red;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.cardContainer .card:first-child{
+    margin-top: -2rem;
+}
+
+.card img{
+    width: 20rem;
+    padding: 2rem 0;
+}
+
+.card:last-child img{
+    width: 15rem;
+}
+
+.card .heading{
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: Roboto;
+    padding: 1rem 0;
+}
+
+.card .technology{
+    color: #0B4B79;
+    font-family: Roboto;
+    font-size: 1.8rem;
+}
+
+.card .techStack{
+    font-size: 1.5rem;
+    color: #8e8e8e;
+    padding: 1rem 0;
+    font-family: Roboto;
+}
