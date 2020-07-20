@@ -1,0 +1,38 @@
+.contactContainer{
+    clip-path: polygon(0% 0%, 50% 15%, 100% 0%, 100% 100%, 0% 100%);
+    background-color: #0B4B79;
+    text-align: center;
+}
+
+.contactContainer h3{
+    font-family: Roboto;
+    font-size: 3rem;
+    color: white;
+    padding-top: 4rem;
+}
+
+.contactImage{
+    width: 16rem;
+    margin: auto;
+    padding: 2rem 0;
+}
+
+.flexCenter input{
+    width: 80%;
+    margin: 0.5rem auto;
+    height: 3.3rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0 1rem;
+    font-family: Roboto;
+}
+
+.flexCenter textarea{
+    height: 8rem;
+    width: 80%;
+    margin: 0.5rem auto;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 0 1rem;
+    font-family: Roboto;
+}
