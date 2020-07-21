@@ -17,6 +17,7 @@
     display: inline;
     color: transparent;
     -webkit-text-stroke: 1px #0B4B79;  
+    z-index: 0;
 }
 
 .fullStack::before{

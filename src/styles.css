@@ -42,3 +42,15 @@ html,body{
     font-size: 62.5%;
     font-family: 'Raleway', sans-serif;
 }
+
+
+.flexCenter{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flexBtw{
+  display: flex;
+  justify-content: center;
+}
