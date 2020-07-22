@@ -1,0 +1,16 @@
+.aboutContainer h3{
+    font-family: Roboto;
+    color: #0b4b79;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.imgContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.imgContainer img{
+    clip-path: polygon(30% 2%, 70% 2%, 100% 30%, 100% 70%, 70% 98%, 30% 98%, 0% 70%, 0% 30%);
+    width: 13rem;
+}
